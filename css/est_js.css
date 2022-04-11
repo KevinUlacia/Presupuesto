@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+
+body {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+    color: #474f6b;
+    
+}
+
+main {
+    background-color: #7685bd;
+    border-radius: 10px;
+    width: max-content;
+    padding: 1rem;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 61px;
+    width: 100%
+}
+
+section {
+    display: grid;
+    grid-template-areas: 
+    "ingreso ingreso"
+    "gflabel gfspan"
+    "gvlabel gvspan"
+    "ahorrolabel ahorrospan"
+    "calcular eliminar";
+    grid-template-columns: 
+    300px 300px;
+    grid-template-rows: auto;
+    gap: 0.5rem;
+}
+
+section > input {
+    grid-area: ingreso;
+    border: none;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    width: 100%;
+} 
+
+label[for="gf"] {
+    grid-area: gflabel;
+}
+
+label[for="gv"] {
+    grid-area: gvlabel;
+}
+
+label[for="ahorro"] {
+    grid-area: ahorrolabel;
+}
+
+#gf {
+    grid-area: gfspan;
+}
+
+#gv {
+    grid-area: gvspan;
+}
+
+#ahorro {
+    grid-area: ahorrospan;
+}
+
+section > label {
+    margin-bottom: 20px;
+    width: 90%;
+}
+
+ button {
+    border: none;
+    border-radius: 7px;
+    margin-bottom: 25px;
+    width: 100%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#bot1 {
+    grid-area: calcular;
+}
+
+#bot2 {
+    grid-area: eliminar;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
